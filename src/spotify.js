@@ -12,7 +12,7 @@ const scopes = [
 ];
 
 export const getTokenFromResponse = () => {
-  return window.location.hash
+  return window.location.has
     .substring(1)
     .split("&")
     .reduce((initial, item) => {
